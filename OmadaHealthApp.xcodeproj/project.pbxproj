@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE5C14C92906EB8E00589B0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C14C82906EB8E00589B0E /* AppDelegate.swift */; };
+		FE5C14CB2906EB8E00589B0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C14CA2906EB8E00589B0E /* SceneDelegate.swift */; };
+		FE5C14CD2906EB8E00589B0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C14CC2906EB8E00589B0E /* ViewController.swift */; };
+		FE5C14D22906EB8F00589B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5C14D12906EB8F00589B0E /* Assets.xcassets */; };
+		FE5C14D52906EB8F00589B0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE5C14D32906EB8F00589B0E /* LaunchScreen.storyboard */; };
+		FE5C14E02906EB8F00589B0E /* OmadaHealthAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C14DF2906EB8F00589B0E /* OmadaHealthAppTests.swift */; };
+		FE5C14EA2906EB8F00589B0E /* OmadaHealthAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C14E92906EB8F00589B0E /* OmadaHealthAppUITests.swift */; };
+		FE5C14EC2906EB8F00589B0E /* OmadaHealthAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C14EB2906EB8F00589B0E /* OmadaHealthAppUITestsLaunchTests.swift */; };
+		FE5C14FB2906F18900589B0E /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C14FA2906F18900589B0E /* SlideView.swift */; };
+		FE5C14FD29071D9800589B0E /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C14FC29071D9800589B0E /* Bundle.swift */; };
+		FE5C14FF29071E2F00589B0E /* Omada.json in Resources */ = {isa = PBXBuildFile; fileRef = FE5C14FE29071E2F00589B0E /* Omada.json */; };
+		FE5C15012907712700589B0E /* QuoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C15002907712700589B0E /* QuoteData.swift */; };
+		FE5C15072907718300589B0E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C15062907718300589B0E /* MainViewModel.swift */; };
+		FE5C150A290771E000589B0E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C1509290771E000589B0E /* MainView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE5C14DC2906EB8F00589B0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE5C14BD2906EB8E00589B0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE5C14C42906EB8E00589B0E;
+			remoteInfo = OmadaHealthApp;
+		};
+		FE5C14E62906EB8F00589B0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE5C14BD2906EB8E00589B0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE5C14C42906EB8E00589B0E;
+			remoteInfo = OmadaHealthApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE5C14C52906EB8E00589B0E /* OmadaHealthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmadaHealthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE5C14C82906EB8E00589B0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE5C14CA2906EB8E00589B0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FE5C14CC2906EB8E00589B0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE5C14D12906EB8F00589B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE5C14D42906EB8F00589B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE5C14D62906EB8F00589B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE5C14DB2906EB8F00589B0E /* OmadaHealthAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmadaHealthAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE5C14DF2906EB8F00589B0E /* OmadaHealthAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmadaHealthAppTests.swift; sourceTree = "<group>"; };
+		FE5C14E52906EB8F00589B0E /* OmadaHealthAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmadaHealthAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE5C14E92906EB8F00589B0E /* OmadaHealthAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmadaHealthAppUITests.swift; sourceTree = "<group>"; };
+		FE5C14EB2906EB8F00589B0E /* OmadaHealthAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmadaHealthAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FE5C14FA2906F18900589B0E /* SlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
+		FE5C14FC29071D9800589B0E /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		FE5C14FE29071E2F00589B0E /* Omada.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Omada.json; sourceTree = "<group>"; };
+		FE5C15002907712700589B0E /* QuoteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteData.swift; sourceTree = "<group>"; };
+		FE5C15062907718300589B0E /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		FE5C1509290771E000589B0E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE5C14C22906EB8E00589B0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE5C14D82906EB8F00589B0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE5C14E22906EB8F00589B0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE5C14BC2906EB8E00589B0E = {
+			isa = PBXGroup;
+			children = (
+				FE5C14C72906EB8E00589B0E /* OmadaHealthApp */,
+				FE5C14DE2906EB8F00589B0E /* OmadaHealthAppTests */,
+				FE5C14E82906EB8F00589B0E /* OmadaHealthAppUITests */,
+				FE5C14C62906EB8E00589B0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE5C14C62906EB8E00589B0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE5C14C52906EB8E00589B0E /* OmadaHealthApp.app */,
+				FE5C14DB2906EB8F00589B0E /* OmadaHealthAppTests.xctest */,
+				FE5C14E52906EB8F00589B0E /* OmadaHealthAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE5C14C72906EB8E00589B0E /* OmadaHealthApp */ = {
+			isa = PBXGroup;
+			children = (
+				FE5C15022907715300589B0E /* Model */,
+				FE5C15032907716300589B0E /* View */,
+				FE5C1508290771BE00589B0E /* ViewModel */,
+				FE5C14C82906EB8E00589B0E /* AppDelegate.swift */,
+				FE5C14CA2906EB8E00589B0E /* SceneDelegate.swift */,
+				FE5C14D12906EB8F00589B0E /* Assets.xcassets */,
+				FE5C14D32906EB8F00589B0E /* LaunchScreen.storyboard */,
+				FE5C14D62906EB8F00589B0E /* Info.plist */,
+			);
+			path = OmadaHealthApp;
+			sourceTree = "<group>";
+		};
+		FE5C14DE2906EB8F00589B0E /* OmadaHealthAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE5C14DF2906EB8F00589B0E /* OmadaHealthAppTests.swift */,
+			);
+			path = OmadaHealthAppTests;
+			sourceTree = "<group>";
+		};
+		FE5C14E82906EB8F00589B0E /* OmadaHealthAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FE5C14E92906EB8F00589B0E /* OmadaHealthAppUITests.swift */,
+				FE5C14EB2906EB8F00589B0E /* OmadaHealthAppUITestsLaunchTests.swift */,
+			);
+			path = OmadaHealthAppUITests;
+			sourceTree = "<group>";
+		};
+		FE5C15022907715300589B0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE5C15002907712700589B0E /* QuoteData.swift */,
+				FE5C14FC29071D9800589B0E /* Bundle.swift */,
+				FE5C14FE29071E2F00589B0E /* Omada.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE5C15032907716300589B0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE5C15052907717100589B0E /* ViewController */,
+				FE5C15042907716B00589B0E /* View */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE5C15042907716B00589B0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE5C14FA2906F18900589B0E /* SlideView.swift */,
+				FE5C1509290771E000589B0E /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE5C15052907717100589B0E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE5C14CC2906EB8E00589B0E /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FE5C1508290771BE00589B0E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FE5C15062907718300589B0E /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE5C14C42906EB8E00589B0E /* OmadaHealthApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE5C14EF2906EB8F00589B0E /* Build configuration list for PBXNativeTarget "OmadaHealthApp" */;
+			buildPhases = (
+				FE5C14C12906EB8E00589B0E /* Sources */,
+				FE5C14C22906EB8E00589B0E /* Frameworks */,
+				FE5C14C32906EB8E00589B0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OmadaHealthApp;
+			productName = OmadaHealthApp;
+			productReference = FE5C14C52906EB8E00589B0E /* OmadaHealthApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE5C14DA2906EB8F00589B0E /* OmadaHealthAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE5C14F22906EB8F00589B0E /* Build configuration list for PBXNativeTarget "OmadaHealthAppTests" */;
+			buildPhases = (
+				FE5C14D72906EB8F00589B0E /* Sources */,
+				FE5C14D82906EB8F00589B0E /* Frameworks */,
+				FE5C14D92906EB8F00589B0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE5C14DD2906EB8F00589B0E /* PBXTargetDependency */,
+			);
+			name = OmadaHealthAppTests;
+			productName = OmadaHealthAppTests;
+			productReference = FE5C14DB2906EB8F00589B0E /* OmadaHealthAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE5C14E42906EB8F00589B0E /* OmadaHealthAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE5C14F52906EB8F00589B0E /* Build configuration list for PBXNativeTarget "OmadaHealthAppUITests" */;
+			buildPhases = (
+				FE5C14E12906EB8F00589B0E /* Sources */,
+				FE5C14E22906EB8F00589B0E /* Frameworks */,
+				FE5C14E32906EB8F00589B0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE5C14E72906EB8F00589B0E /* PBXTargetDependency */,
+			);
+			name = OmadaHealthAppUITests;
+			productName = OmadaHealthAppUITests;
+			productReference = FE5C14E52906EB8F00589B0E /* OmadaHealthAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE5C14BD2906EB8E00589B0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					FE5C14C42906EB8E00589B0E = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					FE5C14DA2906EB8F00589B0E = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = FE5C14C42906EB8E00589B0E;
+					};
+					FE5C14E42906EB8F00589B0E = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = FE5C14C42906EB8E00589B0E;
+					};
+				};
+			};
+			buildConfigurationList = FE5C14C02906EB8E00589B0E /* Build configuration list for PBXProject "OmadaHealthApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE5C14BC2906EB8E00589B0E;
+			productRefGroup = FE5C14C62906EB8E00589B0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE5C14C42906EB8E00589B0E /* OmadaHealthApp */,
+				FE5C14DA2906EB8F00589B0E /* OmadaHealthAppTests */,
+				FE5C14E42906EB8F00589B0E /* OmadaHealthAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE5C14C32906EB8E00589B0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE5C14D52906EB8F00589B0E /* LaunchScreen.storyboard in Resources */,
+				FE5C14FF29071E2F00589B0E /* Omada.json in Resources */,
+				FE5C14D22906EB8F00589B0E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE5C14D92906EB8F00589B0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE5C14E32906EB8F00589B0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE5C14C12906EB8E00589B0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE5C15012907712700589B0E /* QuoteData.swift in Sources */,
+				FE5C150A290771E000589B0E /* MainView.swift in Sources */,
+				FE5C15072907718300589B0E /* MainViewModel.swift in Sources */,
+				FE5C14CD2906EB8E00589B0E /* ViewController.swift in Sources */,
+				FE5C14C92906EB8E00589B0E /* AppDelegate.swift in Sources */,
+				FE5C14FB2906F18900589B0E /* SlideView.swift in Sources */,
+				FE5C14FD29071D9800589B0E /* Bundle.swift in Sources */,
+				FE5C14CB2906EB8E00589B0E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE5C14D72906EB8F00589B0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE5C14E02906EB8F00589B0E /* OmadaHealthAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE5C14E12906EB8F00589B0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE5C14EA2906EB8F00589B0E /* OmadaHealthAppUITests.swift in Sources */,
+				FE5C14EC2906EB8F00589B0E /* OmadaHealthAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE5C14DD2906EB8F00589B0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE5C14C42906EB8E00589B0E /* OmadaHealthApp */;
+			targetProxy = FE5C14DC2906EB8F00589B0E /* PBXContainerItemProxy */;
+		};
+		FE5C14E72906EB8F00589B0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE5C14C42906EB8E00589B0E /* OmadaHealthApp */;
+			targetProxy = FE5C14E62906EB8F00589B0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE5C14D32906EB8F00589B0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE5C14D42906EB8F00589B0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE5C14ED2906EB8F00589B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE5C14EE2906EB8F00589B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE5C14F02906EB8F00589B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4LBT7283WA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OmadaHealthApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sam.OmadaHealthApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE5C14F12906EB8F00589B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4LBT7283WA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OmadaHealthApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sam.OmadaHealthApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FE5C14F32906EB8F00589B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4LBT7283WA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sam.OmadaHealthAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OmadaHealthApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OmadaHealthApp";
+			};
+			name = Debug;
+		};
+		FE5C14F42906EB8F00589B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4LBT7283WA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sam.OmadaHealthAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OmadaHealthApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OmadaHealthApp";
+			};
+			name = Release;
+		};
+		FE5C14F62906EB8F00589B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4LBT7283WA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sam.OmadaHealthAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OmadaHealthApp;
+			};
+			name = Debug;
+		};
+		FE5C14F72906EB8F00589B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4LBT7283WA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sam.OmadaHealthAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OmadaHealthApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE5C14C02906EB8E00589B0E /* Build configuration list for PBXProject "OmadaHealthApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE5C14ED2906EB8F00589B0E /* Debug */,
+				FE5C14EE2906EB8F00589B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE5C14EF2906EB8F00589B0E /* Build configuration list for PBXNativeTarget "OmadaHealthApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE5C14F02906EB8F00589B0E /* Debug */,
+				FE5C14F12906EB8F00589B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE5C14F22906EB8F00589B0E /* Build configuration list for PBXNativeTarget "OmadaHealthAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE5C14F32906EB8F00589B0E /* Debug */,
+				FE5C14F42906EB8F00589B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE5C14F52906EB8F00589B0E /* Build configuration list for PBXNativeTarget "OmadaHealthAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE5C14F62906EB8F00589B0E /* Debug */,
+				FE5C14F72906EB8F00589B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE5C14BD2906EB8E00589B0E /* Project object */;
+}
