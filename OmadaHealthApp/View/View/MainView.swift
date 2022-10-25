@@ -24,9 +24,7 @@ final class MainView: UIView {
     setupView()
   }
 
-  required init?(coder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
-  }
+
 
   func setupView() {
     self.backgroundColor = .systemBackground
@@ -42,6 +40,10 @@ final class MainView: UIView {
       customView.centerYAnchor.constraint(equalTo: self.backgroundImage.centerYAnchor),
       customView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: Values.widthMultiplier),
     ])
+  }
+
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
   }
 
   private enum Values {
