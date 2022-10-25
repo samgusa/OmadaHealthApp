@@ -23,15 +23,15 @@ Build an app using your UI framework of choice and display these quotes. Each qu
 
 To determine when the quote and author change, I used a Timer.scheduledTimer, and the time interval was the timeDelay.
 
-The JSON data is put in a .json file and read using a Bundle decoder shown in the Bundle file. 
+The JSON data is put in a [.json](https://github.com/samgusa/OmadaHealthApp/blob/main/OmadaHealthApp/Model/Omada.json) file and read using a Bundle decoder shown in the [Bundle](https://github.com/samgusa/OmadaHealthApp/blob/main/OmadaHealthApp/Model/Bundle.swift) file. 
 
 I wanted to use Combine to make the tasks more reactive, so I used a Future to read the .json file, as well as other publishers to read to flow of logic.
 
 #### UI
 
-Everything is written programmatically in UIKit. No Storyboards.
+Everything is written programmatically in UIKit. No Storyboards. I use the MVVM design pattern, so most of the logic is used in the ViewModel.
 
-I created a custom view for the quote and author name that is in the center of the view. 
+I created a [custom view](https://github.com/samgusa/OmadaHealthApp/blob/main/OmadaHealthApp/View/View/SlideView.swift) for the quote and author name that is in the center of the view. 
 
 The background is using systemBackground, and the text is of color .label, so that it works in light and dark mode.
 
