@@ -29,7 +29,7 @@ I wanted to use Combine to make the tasks more reactive, so I used a Future to r
 
 #### UI
 
-Everything is written programmatically in UIKit. No Storyboards. I use the MVVM design pattern, so most of the logic is used in the ViewModel.
+Everything is written programmatically in UIKit. No Storyboards. I use the MVVM design pattern, so most of the logic is used in the [ViewModel](https://github.com/samgusa/OmadaHealthApp/blob/main/OmadaHealthApp/ViewModel/MainViewModel.swift).
 
 I created a [custom view](https://github.com/samgusa/OmadaHealthApp/blob/main/OmadaHealthApp/View/View/SlideView.swift) for the quote and author name that is in the center of the view. 
 
