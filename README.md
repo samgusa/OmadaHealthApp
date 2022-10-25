@@ -16,14 +16,12 @@ We would like to display a slideshow of quotes to the user. The quotes that need
 
 Build an app using your UI framework of choice and display these quotes. Each quote should be displayed for the specified amount of time, and the screen should then update to show the next quote. You can hardcode the sample data into a data structure of your choice. At the end of the slideshow, loop back to the first slide.
 
-To determine when the quote and author change, I used a Timer.scheduledTimer, and the time interval was the timeDelay.
-
-
-
 
 ## Description:
 
 #### Logic
+
+To determine when the quote and author change, I used a Timer.scheduledTimer, and the time interval was the timeDelay.
 
 The JSON data is put in a .json file and read using a Bundle decoder shown in the Bundle file. 
 
@@ -44,7 +42,6 @@ For a little extra design, an image of the author appears behind the view. To he
 To make everything look a little better, I add an animation to the change of quote and author. The animation is being used on the alpha, so it looks like the old quote is disappearing and then the new quote is appearing.
 
 
+## Recording:
 
-
-
-
+https://user-images.githubusercontent.com/45985527/197859920-41a54cc0-b393-46fa-bfa5-ef5a8a42aec8.mp4
