@@ -34,25 +34,16 @@ struct MainViewModel {
 extension MainViewModel {
 
   // How I would do a network call
-  mutating func fetchCombine() {
-    guard let url = URL(string: "testUrl") else { return }
-    URLSession
+  mutating func fetchCombine(_ url: URL) -> AnyPublisher<[QuoteData], Error> {
+
+    let urlTest = URLSession
       .shared
       .dataTaskPublisher(for: url)
       .map(\.data)
       .decode(type: [QuoteData].self, decoder: JSONDecoder())
       .eraseToAnyPublisher()
-      .sink { completion in
-        switch completion {
-        case .finished:
-          break
-        case .failure(let error):
-          print(error)
-        }
-      } receiveValue: { quoteData in
 
-      }
-      .store(in: &cancellable)
+    return urlTest
   }
 
 
