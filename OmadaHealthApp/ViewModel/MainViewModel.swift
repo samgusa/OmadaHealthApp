@@ -10,8 +10,10 @@ struct MainViewModel {
 
   var cancellable = Set<AnyCancellable>()
 
+  private var arr = 0
+
   mutating func fireTimer() {
-    if arrayNum < 3 {
+    if arrayNum < (arr - 1) {
       arrayNum += 1
     } else {
       arrayNum = 0
@@ -19,9 +21,10 @@ struct MainViewModel {
     intPublished.send(arrayNum)
   }
 
-  func fetchQuoteData() -> Future<[QuoteData], Never> {
+  mutating func fetchQuoteData() -> Future<[QuoteData], Never> {
+    let bundleInfo: [QuoteData] = Bundle.main.decode([QuoteData].self, from: "Omada.json")
+    arr = bundleInfo.count
     return Future { promise in
-      let bundleInfo: [QuoteData] = Bundle.main.decode([QuoteData].self, from: "Omada.json")
       promise(.success(bundleInfo))
     }
   }

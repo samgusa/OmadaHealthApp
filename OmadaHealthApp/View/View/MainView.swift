@@ -24,8 +24,6 @@ final class MainView: UIView {
     setupView()
   }
 
-
-
   func setupView() {
     self.backgroundColor = .systemBackground
     self.addSubview(backgroundImage)
