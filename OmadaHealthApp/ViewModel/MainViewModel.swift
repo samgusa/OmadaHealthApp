@@ -10,6 +10,7 @@ struct MainViewModel {
 
   var cancellable = Set<AnyCancellable>()
 
+  // What to do if there are more quotes in the json.
   private var arr = 0
 
   mutating func fireTimer() {
@@ -30,3 +31,29 @@ struct MainViewModel {
   }
 }
 
+extension MainViewModel {
+
+  // How I would do a network call
+  mutating func fetchCombine() {
+    guard let url = URL(string: "") else { return }
+    URLSession
+      .shared
+      .dataTaskPublisher(for: url)
+      .map(\.data)
+      .decode(type: [QuoteData].self, decoder: JSONDecoder())
+      .eraseToAnyPublisher()
+      .sink { completion in
+        switch completion {
+        case .finished:
+          break
+        case .failure(let error):
+          print(error)
+        }
+      } receiveValue: { quoteData in
+
+      }
+      .store(in: &cancellable)
+  }
+
+
+}
