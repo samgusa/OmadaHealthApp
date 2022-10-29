@@ -35,7 +35,7 @@ extension MainViewModel {
 
   // How I would do a network call
   mutating func fetchCombine() {
-    guard let url = URL(string: "") else { return }
+    guard let url = URL(string: "testUrl") else { return }
     URLSession
       .shared
       .dataTaskPublisher(for: url)
