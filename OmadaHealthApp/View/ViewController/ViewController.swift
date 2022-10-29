@@ -17,6 +17,17 @@ class ViewController: UIViewController {
   override func loadView() {
     view = rootView
 
+//How it would call url session from viewmodel
+    guard let url = URL(string: "") else { return }
+
+    viewModel.fetchCombine(url)
+      .sink { completion in
+
+      } receiveValue: { quoteData in
+
+      }
+
+
     viewModel.fetchQuoteData()
       .combineLatest(viewModel.intPublished)
       .sink { [weak self] (quoteData, arrayInt) in
